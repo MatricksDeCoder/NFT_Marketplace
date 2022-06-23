@@ -52,7 +52,7 @@
   "sourceMap": "65:352:14:-:0;;;112:10;89:33;;;;;;;;;;;;;;;;;;;;65:352;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "65:352:14:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;126:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;89:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;312:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;126:36;;;;:::o;89:33::-;;;;;;;;;;;;:::o;312:103::-;224:5;;;;;;;;;;210:19;;:10;:19;;;195:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;401:9:::1;374:24;:36;;;;312:103:::0;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.0 <0.8.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}",
-  "sourcePath": "/Users/zed/Desktop/ZED_ORGANIZED/Zed_Blockchain/2_BLOCKCHAIN_PROJECTS/4_NFT_Masterclass_Polygon/src/backEnd/contracts/Migrations.sol",
+  "sourcePath": "/Users/zed/Desktop/NFT_Marketplace/src/backEnd/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/src/backEnd/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -903,8 +903,8 @@
     "80001": {
       "events": {},
       "links": {},
-      "address": "0x3AFF374aD7Ffcbd57FCD51B6CA8F6B82f5379ECC",
-      "transactionHash": "0x92c91c3363890a90b1cd3d223307e53308c7fce71a36216d25ed02fc4446e4cb"
+      "address": "0xad08b9DE23107A2e9029A6B3914BdB3575C04DA2",
+      "transactionHash": "0xe1d0621e48f80c6ae6203494558bf388062f653fcbcbbb6b8a6aafb3877c05fc"
     },
     "1623063174279": {
       "events": {},
@@ -929,10 +929,16 @@
       "links": {},
       "address": "0xeb616F0f7D84C676f98155020e0C3ae826a9dc26",
       "transactionHash": "0x3da002da8940540fa1a71ab2206fe091102d597ab43d836f323b0835c4f9a35e"
+    },
+    "1655978597659": {
+      "events": {},
+      "links": {},
+      "address": "0xf40d6E7F090a5D17D5526868ac07523f13C86243",
+      "transactionHash": "0xd7b56408b3e35b1540952efd7addfa98887342d2e0f93becd4bb1af11267e08d"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-04-25T14:47:06.174Z",
+  "updatedAt": "2022-06-23T12:13:20.321Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
